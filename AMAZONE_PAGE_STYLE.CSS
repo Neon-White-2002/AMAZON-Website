@@ -1,0 +1,1820 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: #EAEDED;
+}
+
+header
+{
+    background-color: #131921;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .Website_Logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+header .Website_Logo img
+{
+    width: 120px;
+}
+
+header .Website_Logo span
+{
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+header .Address_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+header .Address_View .Address_Text
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header .Address_View i
+{
+    color: #FFF;
+    font-size: 17px;
+}
+
+header .Address_View .Address_Text p
+{
+    color: #FFF;
+    font-size: 13px;
+}
+
+header .Address_View .Address_Text span
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header .Search_Box
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin: 10px 15px;
+}
+
+header .Search_Box select
+{
+    width: 117px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 35px;
+    padding: 5px;
+}
+
+header .Search_Box input
+{
+    width: 100%;
+    margin-left: 1px;
+    border: none;
+    outline: none;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+header .Search_Box button
+{
+    background-color: #FEBD69;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 35px;
+    padding: 5px 10px;
+}
+
+header .Search_Box button i
+{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #131921;
+}
+
+header .Country_And_Language_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+header .Country_And_Language_View:hover .Language_Box
+{
+    display: flex;
+}
+
+header .Country_And_Language_View .Language_Box
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 15px;
+    position: absolute;
+    top: 45px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+
+header .Country_And_Language_View .Language_Box hr
+{
+    margin: 5px 0px;
+    height: 1px;
+    background-color: #131921;
+}
+
+header .Country_And_Language_View .Language_Box .Language_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+header .Country_And_Language_View .Language_Box .Language_Row_View p
+{
+    margin-left: 7px;
+    font-size: 13px;
+}
+
+header .Country_And_Language_View .Language_Box .Language_Row_View p:hover
+{
+    text-decoration: underline #F08804;
+}
+
+header .Country_And_Language_View .Language_Box .Language_Row_View img
+{
+    width: 20px;
+}
+
+header .Country_And_Language_View .Language_Box a
+{
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    font-size: 13px;
+    color: #0066C0;
+    margin-top: 5px;
+}
+
+header .Country_And_Language_View .Language_Box a:hover
+{
+    text-decoration: underline #F08804;
+}
+
+header .Country_And_Language_View img
+{
+    width: 30px;
+}
+
+header .Country_And_Language_View i
+{
+    color: #D3D3D3;
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+header .Sign_In_Account_List
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+header .Sign_In_Account_List:hover .Sign_In_Box
+{
+    display: flex;
+}
+
+header .Sign_In_Account_List .Sign_In_Box
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: max-content;
+    z-index: 1;
+    display: none;
+}
+
+
+header .Sign_In_Account_List .Sign_In_Box hr
+{
+    height: 1px;
+    background-color: #131921;
+    margin: 10px 0;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Horizontal_Bar
+{
+    border-left: 1px solid #131921;
+    margin: 0px 30px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_List p
+{
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_List ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_List ul li
+{
+    list-style: none;
+    margin-top: 3px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_List ul li a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 15px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_Account p
+{
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_Account ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_Account ul li 
+{
+    list-style: none;
+    margin-top: 3px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .List_And_Account_View .Your_Account ul li a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 15px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .Sign_In_Customer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .Sign_In_Customer button
+{
+    border: none;
+    outline: none;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), #F08804);
+    padding: 5px 10px;
+    font-weight: 700;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: .7px;
+    cursor: pointer;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .Sign_In_Customer p
+{
+    color: #000;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+header .Sign_In_Account_List .Sign_In_Box .Sign_In_Customer p a
+{
+    text-decoration: none;
+    font-size: 13px;
+    color: #0066C0;
+    font-weight: bold;
+}
+
+header .Sign_In_Account_List p
+{
+    color: #FFF;
+    font-size: 13px;
+}
+
+header .Sign_In_Account_List span
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header .Sign_In_Account_List span i
+{
+    font-size: 10px;
+    color: #D3D3D3;
+}
+
+header .Return_Order
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+header .Return_Order p
+{
+    color: #FFF;
+    font-size: 13px;
+}
+
+header .Return_Order span
+{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header .Cart
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+header .Cart p
+{
+    font-size: 13px;
+    color: #F08804;
+    font-weight: bold;
+    position: absolute;
+    top: 7px;
+    margin-left: 13px;
+}
+
+header .Cart span
+{
+    color: #FFF;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+header .Cart span i
+{
+    font-size: 30px;
+}
+
+.Sub_Header
+{
+    background: #232F3E;
+    padding: 10px;
+}
+
+.Sub_Header ul
+{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.Sub_Header ul li
+{
+    color: #FFF;
+    font-size: 13px;
+    padding: 3px 7px;
+}
+
+.Sub_Header ul li a
+{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.Sub_Header ul li:hover .Prime_Box
+{
+    display: block;
+}
+
+.Sub_Header ul li .Prime_Box
+{
+    position: absolute;
+    background: #FFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    left: 40%;
+    margin-top: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.Slide_Container
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.Slide_Container #Slider
+{
+    display: inline-flex;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+.Slide_Container #Slider img
+{
+    width: 100%;
+}
+
+.Slide_Container .Slide_Controller
+{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Slide_Container .Slide_Controller span
+{
+    height: 15px;
+    width: 15px;
+    background: #131921;
+    border-radius: 50%;
+    display: inline-flex;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+.Active
+{
+    background: #232F3E !important;
+}
+
+.Background_Blur
+{
+    background: rgba(255, 255, 255, 0.7);
+    filter: blur(5px);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+}
+
+.First_Row_Box_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 57%;
+    width: 100%;
+}
+
+.First_Row_Box_View .First_Row_Box
+{
+    background: #FFF;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.First_Row_Box_View .Sign_In_Box
+{
+    background: #FFF;
+    padding: 20px 15px;
+    height: fit-content;
+    width: 350px;
+    margin: 0 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.First_Row_Box_View .Sign_In_Box h1
+{
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.First_Row_Box_View .Sign_In_Box a button
+{
+    border: none;
+    outline: none;
+    background: #FFD814;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: .7px;
+    cursor: pointer;
+}
+
+.First_Row_Box_View .First_Row_Box a
+{
+    text-decoration: none;
+    color: #007185;
+    font-size: 13px;
+    margin: 10px 5px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.First_Row_Box_View .First_Row_Box a:hover
+{
+    text-decoration: underline;
+    color: #F08804;
+}
+
+.First_Row_Box_View .First_Row_Box h1
+{
+    color: #0F1111;
+    font-size: 25px;
+}
+
+.First_Row_Box_View .First_Row_Box .Box_Row_View img
+{
+    width: 100%;
+}
+
+.First_Row_Box_View .First_Row_Box .Box_Row_View a 
+{
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.First_Row_Box_View .First_Row_Box .Box_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.Second_Row_Box_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 115%;
+    width: 100%;
+}
+
+.Second_Row_Box_View .Second_Row_Box
+{
+    background: #FFF;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 5px 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Second_Row_Box_View .Second_Row_Box a
+{
+    text-decoration: none;
+    color: #007185;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.Second_Row_Box_View .Second_Row_Box a:hover
+{
+    text-decoration: underline;
+    color: #F08804;
+}
+
+.Second_Row_Box_View .Second_Row_Box img
+{
+    width: 100%;
+}
+
+.Second_Row_Box_View .Second_Row_Box .Box_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.Second_Row_Box_View .Second_Row_Box h1
+{
+    color: #0F1111;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.Second_Row_Box_View .Second_Row_Box .Box_Row_View img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Second_Row_Box_View .Second_Row_Box .Box_Row_View a
+{
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Amazone_Body_Contents
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+    padding: 10px 30px;
+    position: absolute;
+    top: 173%;
+}
+
+.Amazone_Body_Contents .Today_Deal_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.Amazone_Body_Contents .Today_Deal_View h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Today_Deal_View h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Today_Deal_View hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+    scroll-behavior: smooth;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block p
+{
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block p:hover
+{
+    text-decoration: underline #F08804;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block p label
+{
+    font-size: 13px;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block span
+{
+    font-size: 13px;
+    color: #565959;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Amazone_Body_Contents .Today_Deal_View .Today_Deal_Images .Today_Deal_Image_Block span:hover
+{
+    text-decoration: underline #F08804;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View .Best_Selling_Furnishing_Image
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View .Best_Selling_Furnishing_Image .Best_Selling_Furnishing_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Best_Selling_Furnishing_View .Best_Selling_Furnishing_Image .Best_Selling_Furnishing_Block img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box
+{
+    background: #FFF;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box a
+{
+    font-size: 13px;
+    color: #007185;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box a:hover
+{
+    color: #F08804;
+    text-decoration: underline;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box h1
+{
+    color: #0F1111;
+    font-size: 23px;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box img
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box .Box_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box .Box_Row_View a
+{
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.Amazone_Body_Contents .Three_Row_Box_View .Three_Row_Box .Box_Row_View a img
+{
+    width: 100%;
+}
+
+.Amazone_Body_Contents .Essential_Food_Product_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Essential_Food_Product_View h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Essential_Food_Product_View hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Essential_Food_Product_View .Essential_Food_Product_Image
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Essential_Food_Product_View .Essential_Food_Product_Image .Essential_Food_Product_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Essential_Food_Product_View .Essential_Food_Product_Image .Essential_Food_Product_Block img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View .Car_And_Bike_Accessories_Image
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View .Car_And_Bike_Accessories_Image .Car_And_Bike_Accessories_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Car_And_Bike_Accessories_View .Car_And_Bike_Accessories_Image .Car_And_Bike_Accessories_Block img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box
+{
+    background: #FFF;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box a
+{
+    font-size: 13px;
+    color: #007185;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box a:hover
+{
+    color: #F08804;
+    text-decoration: underline;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box h1
+{
+    color: #0F1111;
+    font-size: 23px;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box img
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box .Box_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box .Box_Row_View a
+{
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.Amazone_Body_Contents .Four_Row_Box_View .Four_Row_Box .Box_Row_View a img
+{
+    width: 100%;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View .Curated_Protective_Product_Image
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View .Curated_Protective_Product_Image .Curated_Protective_Product_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Curated_Protective_Product_View .Curated_Protective_Product_Image .Curated_Protective_Product_Block img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Explore_the_Lastest_Image
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Explore_the_Lastest_Image .Explore_the_Lastest_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Explore_the_Lastest_Image .Explore_the_Lastest_Block img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Explore_the_Lastest_Image .Explore_the_Lastest_Block a
+{
+    text-decoration: none;
+    position: relative;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Explore_the_Lastest_Image .Explore_the_Lastest_Block a i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    color: #EAEDED;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container
+{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    display: none;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View
+{
+    display: flex;
+    background: #FFF;
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video
+{
+    object-fit: contain;
+    width: 900px;
+    border-top-left-radius: 10px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link
+{
+    display: flex;
+    flex-direction: column;
+    background: #232F3E;
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link .Video_Text_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link .Video_Text_Row_View p
+{
+    color: #FFF;
+    font-size: 20px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link .Video_Text_Row_View p i
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link a
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link a img
+{
+    width: 40%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.Amazone_Body_Contents .Explore_the_Lastest_Launch_View .Video_Container .Video_Link_View .Video_Link a p
+{
+    color: #FFF;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box
+{
+    background: #FFF;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box a
+{
+    font-size: 13px;
+    color: #007185;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box a:hover
+{
+    color: #F08804;
+    text-decoration: underline;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box h1
+{
+    color: #0F1111;
+    font-size: 23px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box img
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .Box_Row_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .Box_Row_View a
+{
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .Box_Row_View a img
+{
+    width: 100%;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .More_Everyday_Essentials_Silder
+{
+    display: inline-flex;
+    flex-direction: row;
+    transition: 0.5s;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .More_Everyday_Essentials_Silder img
+{
+    margin: 0 10px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Box_View_Row
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .Box_View_Row p
+{
+    font-size: 20px;
+    color: #0F1111;
+    font-weight: 900;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .Box_View_Row span
+{
+    font-size: 13px;
+    color: #0F1111;
+    font-weight: bold;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Five_Row_Box_View .Five_Row_Box .Box_Link
+{
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear .Women_Ethnic_Wear_Images
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear .Women_Ethnic_Wear_Images .Women_Ethnic_Wear_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 20px;
+}
+
+.Amazone_Body_Contents .Women_Ethnic_Wear .Women_Ethnic_Wear_Images .Women_Ethnic_Wear_Block a img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware h2
+{
+    color: #0F1111;
+    font-size: 23px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware h2 a
+{
+    color: #007185;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware hr
+{
+    margin: 5px 0;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware .Drink_And_Serveware_Images
+{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware .Drink_And_Serveware_Images .Drink_And_Serveware_Block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 15px;
+}
+
+.Amazone_Body_Contents .Drink_And_Serveware .Drink_And_Serveware_Images .Drink_And_Serveware_Block a img
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content
+{
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View
+{
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View hr
+{
+    margin: 10px 0;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View p
+{
+    color: #0F1111;
+    font-size: 13px;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View a
+{
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View a button
+{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .7px;
+    background: linear-gradient(#FFF, #FFD814);
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #F08804;
+    cursor: pointer;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View .New_Customer_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View .New_Customer_View p
+{
+    font-size: 13px;
+    color: #0F1111;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Sign_In_View .New_Customer_View a
+{
+    text-decoration: none;
+    color: #007185;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Back_To_View
+{
+    background: #37475A;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Back_To_View button
+{
+    color: #FFF;
+    font-size: 15px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #232F3E;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View .About_Amazone_Content_Box
+{
+    margin: 10px 50px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View .About_Amazone_Content_Box ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View .About_Amazone_Content_Box ul li
+{
+    margin: 3px 0;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View .About_Amazone_Content_Box ul li p
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 17px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View .About_Amazone_Content_Box ul li a
+{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .About_Amazone_Content .About_Amazone_Content_View .About_Amazone_Content_Box ul li a:hover
+{
+    text-decoration: underline;
+}
+
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View
+{
+    display: inline-flex;
+    flex-direction: column;
+    background: #232F3E;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Amazone_Logo_And_Language_Box
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Amazone_Logo_And_Language_Box .Amazone_Logo_View a img
+{
+    width: 130px;
+    height: 100%;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Amazone_Logo_And_Language_Box .Amazone_Language_Box
+{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Amazone_Logo_And_Language_Box .Amazone_Language_Box i
+{
+    color: #FFF;
+    font-size: 17px;
+    margin: 0 5px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Amazone_Logo_And_Language_Box .Amazone_Language_Box p
+{
+    color: #FFF;
+    font-size: 15px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Languages_List
+{
+    display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    width: 70%;
+    align-self: center;
+    justify-content: center;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Languages_List a
+{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Amazone_Logo_And_Language_View .Languages_List a:hover
+{
+    text-decoration: underline;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View
+{
+    display: inline-flex;
+    flex-direction: column;
+    background: #131A22;
+    padding: 20px 0;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Amazone_Services_View
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Amazone_Services_View a
+{
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #FFF;
+    margin: 10px 50px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Amazone_Services_View a:hover
+{
+    text-decoration: underline;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Amazone_Services_View a p
+{
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Amazone_Services_View a span
+{
+    color: #999;
+    font-size: 10px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Copy_Right_Text
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Copy_Right_Text p
+{
+    font-size: 13px;
+    color: #FFF;
+    margin: 20px 15px;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Copy_Right_Text p a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.Amazone_Body_Contents .Sign_In_And_About_Amazone_Content .Copy_Right_View .Copy_Right_Text p a:hover
+{
+    text-decoration: underline;
+}
