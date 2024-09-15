@@ -1,4 +1,4 @@
-var CountDownDate = new Date("Feb 25, 2023 20:00:00").getTime(); //SET THE COUNT - DOWN DATE & TIME;
+var CountDownDate = new Date("Dec 25, 2024 20:00:00").getTime(); //SET THE COUNT - DOWN DATE & TIME;
 
 //UPDATE COUNTDATE OFFER (DATE & TIME);
 var CountDownFunction = setInterval(function()
